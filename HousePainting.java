@@ -37,17 +37,16 @@ public class HousePainting {
 
 		System.out.println("Please enter the width of the door: ");
 		int doorWidth = Measurements.nextInt();
-//400ft and $200 short
-		
-		int HouseAreaPeakSide = houseLength * houseWidth + (1/2 * (houseLength * (houseHeight - houseWidth)));
+
+		double HouseAreaPeakSide = houseLength * houseWidth + .5 * (houseLength * (houseHeight - houseWidth));
 		int houseAreaNormalSide = houseLength * houseWidth;
-		int houseArea = (HouseAreaPeakSide*2) + (houseAreaNormalSide*2);
+		double houseArea = (HouseAreaPeakSide * 2) + (houseAreaNormalSide * 2);
 		int windowArea = windowLength * windowWidth;
 		int doorArea = doorLength * doorWidth;
 		int windowTotal = windowArea * numOfWindows;
 		int doorTotal = doorArea * numOfDoors;
 		int unpaintable = doorTotal + windowTotal;
-		int paintable = houseArea - unpaintable;
+		double paintable = houseArea - unpaintable;
 		double costTotal = costPerSquareFoot * paintable;
 
 		System.out.println("Your total paintable surface area is " + paintable + " square feet");
