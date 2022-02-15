@@ -8,7 +8,7 @@ public class MicrowaveTester {
 		MyMicrowave.TimeButton
 		
 		
-**/
+
 		
 		System.out.println("The timer reads: ");
 		
@@ -31,7 +31,24 @@ public class MicrowaveTester {
 		//y= (start)
 		//n= (ask all questions again)
 		
+		**/	
 		
+		
+		
+		//create microwave object
+		Microwave myMicrowave = new Microwave();
+		
+		//hit the powerButton
+		myMicrowave.powerButton();
+		
+		//hit the TimeButton
+		myMicrowave.timeButton();
+		
+		//hit the startButton
+		myMicrowave.startButton();
+		
+		//hit the resetButton
+		myMicrowave.resetButton();
 	}
 
 }

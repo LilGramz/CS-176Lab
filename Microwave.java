@@ -5,24 +5,39 @@ public class Microwave {
 	// reset button
 	// start button
 
-	int time = 0;
+	// instance variables
+	private int time;
+	private int power;
 
-	public int getTime() {
-		return time;
+	// construction variables
+	public Microwave() {
+		time = 0;
+		power = 1;
 	}
 
-	public void setTime(int time) {
-		this.time = time + 30;
+	// timeButton method
+	public void timeButton() {
+		time = time + 30;
 	}
 
-	int power = 1;
-
-	public int getPower() {
-		return power;
+	// powerButton method (toggle)
+	public void powerButton() {
+		if (power == 1) {
+			power = 2;
+		} else {
+			power = 1;
+		}
 	}
 
-	public void setPower(int power) {
-		this.power = power;
+	//resetButton method 
+	public void resetButton() {
+		time = 0;
+		power = 1;
 	}
-
+	
+	//startButton method 
+	public void startButton() {
+		System.out.println("Cooking for "+time+" seconds at power level "+power+" of 2.");
+	}
+	
 }
