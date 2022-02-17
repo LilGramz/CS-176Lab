@@ -14,6 +14,11 @@ public class Microwave {
 		time = 0;
 		power = 1;
 	}
+	
+	public Microwave(int timeIn, int powerIn) {
+		time = timeIn;
+		power = powerIn;
+	}
 
 	// display power method
 	public void displayPower() {
