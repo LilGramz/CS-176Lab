@@ -15,6 +15,22 @@ public class Microwave {
 		power = 1;
 	}
 
+	// display power method
+	public void displayPower() {
+		System.out.println("Current power is: " + power);
+	}
+
+	// display time method
+	public void displayTime() {
+		System.out.println("Current time is: " + time);
+	}
+
+	// display time and power
+	public void displayTimePower() {
+		System.out.println("Current time is: " + time);
+		System.out.println("Current power is: " + power);
+	}
+
 	// timeButton method
 	public void timeButton() {
 		time = time + 30;
@@ -29,15 +45,15 @@ public class Microwave {
 		}
 	}
 
-	//resetButton method 
+	// resetButton method
 	public void resetButton() {
 		time = 0;
 		power = 1;
 	}
-	
-	//startButton method 
+
+	// startButton method
 	public void startButton() {
-		System.out.println("Cooking for "+time+" seconds at power level "+power+" of 2.");
+		System.out.println("Cooking for " + time + " seconds at power level " + power + " of 2.");
 	}
-	
+
 }
